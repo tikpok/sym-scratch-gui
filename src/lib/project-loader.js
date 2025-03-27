@@ -1,7 +1,8 @@
 const getProjectURL = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const project = urlParams.get('project');
-    return project ? `https://USERNAME.github.io/my-scratch-gui/static/${project}` : null;
+    console.log('Project URL param:', project);
+    return project ? `https://tikpok.github.io/sym-scratch-gui/static/${project}` : null;
 };
 
 const loadProject = function (vm) {
