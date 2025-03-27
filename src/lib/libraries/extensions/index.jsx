@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import myExtensionIconURL from './my-extension-icon.png';
+
+
 export default [
     {
         name: (
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="My Extension"
+                description="Name for My Custom Extension"
+                id="gui.extension.myextension.name"
+            />
+        ),
+        extensionId: 'myExtension', // 一意の ID をつける
+        iconURL: myExtensionIconURL, // アイコン画像
+        insetIconURL: myExtensionIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="This is my custom extension!"
+                description="Description for My Custom Extension"
+                id="gui.extension.myextension.description"
+            />
+        ),
+        featured: true // ここを true にすると「おすすめ」に表示される
     }
 ];

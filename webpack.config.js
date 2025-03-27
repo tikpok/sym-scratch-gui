@@ -40,9 +40,28 @@ const baseConfig = new ScratchWebpackConfigBuilder(
         resolve: {
             fallback: {
                 Buffer: require.resolve('buffer/'),
-                stream: require.resolve('stream-browserify')
+                stream: require.resolve('stream-browserify'),
+                fs: false, // ← fs モジュールを無効化
+        crypto: require.resolve('crypto-browserify'),
+        path: require.resolve('path-browserify'),
+        vm: require.resolve("vm-browserify")
+        
             }
-        }
+        },
+         plugins: [
+                    new webpack.ProvidePlugin({
+                        process: 'process/browser.js',
+                        Buffer: ['buffer', 'Buffer']
+                    }),
+                     new webpack.NormalModuleReplacementPlugin(
+                                    /symbol-crypto-wasm-node/,
+                                    '../../../symbol-crypto-wasm-web/symbol_crypto_wasm.js'
+                                )
+                ],
+                experiments: {
+                    asyncWebAssembly: true,
+                    topLevelAwait: true
+                }
     })
     .addModuleRule({
         test: /\.(svg|png|wav|mp3|gif|jpg)$/,
