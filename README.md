@@ -2,7 +2,7 @@
 symbol-sdk-v3をscratch-v3で使えるようになったので、絵本のような会話劇をつくりました。
 スクラッチは触ってみたかったので楽しんで作れました。
 
-##　ソクシュー
+## ソクシュー
 しんぼらの森に迷い込んだ男の子が殻かぶりに森のいろはを教わる物語です。
 
 すべて緑の旗をクリックしてスタート、
@@ -22,9 +22,9 @@ https://tikpok.github.io/sym-scratch-gui/?project=sokushu_3.sb3
 作者が速習シンボルのV3版をみながら作ったのでタイトルはソクシューですけど、
 中身はゆっくりしんぼるって感じです。
 
-##　使用させていただいているリポジトリ・素材
+## 使用させていただいているリポジトリ・素材
 
-###　symbol関係
+### symbol関係
 symbol-sdk v3.2.3
 https://www.npmjs.com/package/symbol-sdk
 
@@ -35,7 +35,7 @@ https://www.npmjs.com/package/symbol-node-util
 https://github.com/TGVRock/quick_learning_symbol_v3
 
 
-###　scratch関係
+### scratch関係
 
 scratch-gui
 https://github.com/scratchfoundation/scratch-gui
@@ -52,13 +52,11 @@ https://scratch.mit.edu/projects/370770450/
 いらすとや
 https://www.irasutoya.com/
 
-##　拡張ブロックについて
+## 拡張ブロックについて 
 ストーリーを成立させるために無理に作ったブロックや
 作ったけど用途がよくわからないブロックがあります。
 sym-scratch-vm/src/extension/myExtension.jsがそれです。
 
-##　まとめ
-チャッピーに言われるままよくわからんままやってますがやっぱり動けば嬉しい。
 
 
 以下は本家のreadme
