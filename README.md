@@ -1,3 +1,68 @@
+# sym-scratch-gui
+symbol-sdk-v3をscratch-v3で使えるようになったので、絵本のような会話劇をつくりました。
+スクラッチは触ってみたかったので楽しんで作れました。
+
+##　ソクシュー
+しんぼらの森に迷い込んだ男の子が殻かぶりに森のいろはを教わる物語です。
+
+すべて緑の旗をクリックしてスタート、
+途中で1回クリックするところがある以外、自動でお話が進みます。
+
+第1話　アカウントって何よ
+https://tikpok.github.io/sym-scratch-gui/?project=sokushu_1.sb3
+
+第2話　森について
+https://tikpok.github.io/sym-scratch-gui/?project=sokushu_2.sb3
+
+第3話　トマトなげるってよ
+https://tikpok.github.io/sym-scratch-gui/?project=sokushu_3.sb3
+
+以降は未定...
+
+作者が速習シンボルのV3版をみながら作ったのでタイトルはソクシューですけど、
+中身はゆっくりしんぼるって感じです。
+
+##　使用させていただいているリポジトリ・素材
+
+###　symbol関係
+symbol-sdk v3.2.3
+https://www.npmjs.com/package/symbol-sdk
+
+symbol-node-util
+https://www.npmjs.com/package/symbol-node-util
+
+速習シンボルV3版
+https://github.com/TGVRock/quick_learning_symbol_v3
+
+
+###　scratch関係
+
+scratch-gui
+https://github.com/scratchfoundation/scratch-gui
+
+scratch-vm
+https://github.com/scratchfoundation/scratch-vm
+
+superpowers-asset-packs
+https://github.com/sparklinlabs/superpowers-asset-packs
+
+テキスト表示エンジン
+https://scratch.mit.edu/projects/370770450/
+
+いらすとや
+https://www.irasutoya.com/
+
+##　拡張ブロックについて
+ストーリーを成立させるために無理に作ったブロックや
+作ったけど用途がよくわからないブロックがあります。
+sym-scratch-vm/src/extension/myExtension.jsがそれです。
+
+##　まとめ
+チャッピーに言われるままよくわからんままやってますがやっぱり動けば嬉しい。
+
+
+以下は本家のreadme
+
 # scratch-gui
 
 Scratch GUI is a set of React components that comprise the interface for creating and running Scratch 3.0 projects
